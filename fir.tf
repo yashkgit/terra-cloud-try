@@ -24,7 +24,7 @@ resource "aws_instance" "terraform-publc-instance" {
   ami           = data.aws_ami.amazonlinux.id
   instance_type = "t2.micro"
   key_name      = "terraform-key"
-  count		= 2
+  count		= 1
   user_data     = <<-EOF
      #!/bin/bash
     sudo yum update -y
