@@ -1,10 +1,5 @@
 # Terraform Block
 terraform {
-  backend "s3" {
-    bucket  = "mayank-terraform-state-file"
-    key     = "new-state/terraform.tfstate"
-    region  = "us-east-1"
-  }
   required_version = "~>1.1.3"
   required_providers {
     aws = {
